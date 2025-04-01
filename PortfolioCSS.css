@@ -93,13 +93,13 @@ header h1 {
 }
 
 #Contact a {
-    color: #003cff; /* Bright cyan color for links */
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Make the links bold */
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    color: #003cff; 
+    text-decoration: none; 
+    font-weight: bold; 
+    transition: color 0.3s ease; 
 }
 
 #Contact a:hover {
-    color: #ffcc00; /* Bright yellow color on hover */
-    text-decoration: underline; /* Add underline on hover */
+    color: #ffcc00; 
+    text-decoration: underline; 
 }
