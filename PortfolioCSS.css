@@ -154,6 +154,17 @@ footer {
     width: 100%;
 }
 
+/* Contact Info Links */
+footer a {
+    color: white; /* Default link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+footer a:hover {
+    color: yellow; /* Change link color to yellow on hover */
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .gallery {
