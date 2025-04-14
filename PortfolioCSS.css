@@ -156,7 +156,7 @@ footer {
 
 /* Contact Info Links */
 footer a {
-    color: white; /* Default link color */
+    color: rgb(83, 163, 255); /* Default link color */
     text-decoration: none; /* Remove underline */
     transition: color 0.3s ease; /* Smooth transition for hover effect */
 }
