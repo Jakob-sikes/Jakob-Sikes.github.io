@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Jakob Sikes</title>
     <link rel="stylesheet" href="PortfolioCSS.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -25,33 +26,33 @@
 
     </header>
 
-    <section id="Home">
+    <section id="Home" class="container text-center my-5">
         <div class="banner">
             <h2>Welcome to My Portfolio</h2>
         </div>
         <p>Showcasing my best 3D models, animations, and interactive projects.</p>
-        <div class="about-container">
-            <img src="ProfPic.jpeg" alt="Jakob Sikes" class="profile-pic">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <img src="ProfPic.jpeg" alt="Jakob Sikes" class="img-fluid rounded-circle profile-pic">
+            </div>
         </div>
-        <p>Hi, I'm Jakob Sikes, a passionate 3D modeler and animator. I create detailed models and animations for games
+        <p class="mt-3">Hi, I'm Jakob Sikes, a passionate 3D modeler and animator. I create detailed models and animations for games
             and visual projects.</p>
     </section>
 
-    <section id="Projects">
-        <div class="banner">
+    <section id="Projects" class="container my-5">
+        <div class="banner text-center">
             <h2>Projects</h2>
         </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
             magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-            est
+            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
             laborum.</p>
     </section>
 
-    <section id="Contact">
-        <div class="banner">
+    <section id="Contact" class="container my-5">
+        <div class="banner text-center">
             <h2>Contact Me</h2>
         </div>
         <p>Email: <a href="mailto:jakob_sik@icloud.com">jakob_sik@icloud.com</a></p>
@@ -61,6 +62,8 @@
     <footer>
         <p>&copy; 2025 | Jakob Sikes | 3D Modeler & Animator</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
