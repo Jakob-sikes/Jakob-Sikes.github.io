@@ -107,36 +107,3 @@ p {
         color: #ffcc00;
         text-decoration: underline;
     }
-
-    .gallery {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 30px;
-        justify-content: center;
-        margin-top: 20px;
-    }
-    
-    .item {
-        width: 100%;
-        max-width: 600px;
-        text-align: center;
-    }
-
-    .gallery-item {
-        width: 100%;
-        height: auto;
-        border-radius: 8px;
-        transition: transform 0.3s ease;
-    }
-    
-    .gallery-item:hover {
-        transform: scale(1.05);
-    }
-    
-    @media (max-width: 768px) {
-        .gallery {
-            grid-template-columns: 1fr;
-        }
-    }
-    
-    
