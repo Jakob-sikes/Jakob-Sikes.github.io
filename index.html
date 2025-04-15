@@ -5,146 +5,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio - Jakob Sikes</title>
-    <link rel="icon" href="data:,"> <!-- Browser looking for favicon -->
+    <link rel="icon" href="data:,">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="PortfolioCSS.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Jakob Sikes</h1>
-        <p>3D Modeler & Animator</p>
-
-        <nav>
-            <ul>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#Projects">Projects</a></li>
-                <li><a href="#Contact">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <h1>Jakob Sikes</h1>
+            <p>3D Modeler & Animator</p>
+            <nav>
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><a class="nav-link text-white" href="#Home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#Projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section id="Home">
-        <div class="banner">
-            <h2>Welcome to My Portfolio</h2>
-        </div>
-        <p>Showcasing my best 3D models, animations, and interactive projects.</p>
-        <div class="about-container">
-            <img src="ProfPic.jpeg" alt="Jakob Sikes" class="profile-pic">
-        </div>
-        <p>Hi, I'm Jakob Sikes, a passionate 3D modeler and animator. I create detailed models and animations for games
-            and visual projects.</p>
-    </section>
-
-    <section id="Projects">
-        <div class="banner">
-            <h2>Projects</h2>
-        </div>
-        <div class="portfolio-section">
-            <h3>3D Models</h3>
-            <div class="gallery">
-                <div class="item">
-                    <video controls class="gallery-item">
-                        <source src="Models/TechnoWeapons/HandBlades.mp4" type="video/mp4" />
-                    </video>
-                </div>
-                <div class="item">
-                    <video controls class="gallery-item">
-                        <source src="Models/TechnoWeapons/DoubleBladeBlaster.mp4" type="video/mp4" />
-                    </video>
-                </div>
-                <div class="item">
-                    <video controls class="gallery-item">
-                        <source src="Models/TechnoWeapons/DoubleSidedBladeBlaster.mp4" type="video/mp4" />
-                    </video>
-                </div>
-                <div class="item">
-                    <video controls class="gallery-item">
-                        <source src="Models/TechnoWeapons/SingleBladeBlaster.mp4" type="video/mp4" />
-                    </video>
+    <section id="Home" class="py-5">
+        <div class="container text-center">
+            <div class="row mb-4">
+                <div class="col">
+                    <h2 class="banner">Welcome to My Portfolio</h2>
+                    <p>Showcasing my best 3D models, animations, and interactive projects.</p>
                 </div>
             </div>
-            <p>
-                This collection of 3D weapon variations was designed for product visualization, focusing on creating a
-                futuristic, off-world aesthetic that diverges from traditional firearm designs. Modeled and textured in
-                Blender, I utilized mirror modifiers to refine symmetrical structures and incorporated Bloom effects to
-                enhance the glowing elements, adding depth and variation. The designs emphasize sleek yet unconventional
-                forms, pushing beyond the orthodox silhouettes of modern weaponry.
-            </p>
-            <div class="gallery">
-                <div class="item">
-                    <video controls class="gallery-item">
-                        <source src="Models/Jet/Jet0001-0980.mp4" type="video/mp4" />
-                    </video>
-                </div>
-                <div class="item">
-                    <img src="Models/Jet/WireFrameJet.png" alt="WireFrameJet" class="gallery-item" />
-                </div>
-                <div class="item">
-                    <img src="Models/Jet/Non-Rendered-Jet.png" alt="Non-renderedJet" class="gallery-item" />
+            <div class="row justify-content-center mb-3">
+                <div class="col-md-4">
+                    <img src="ProfPic.jpeg" alt="Jakob Sikes" class="img-fluid rounded-circle">
                 </div>
             </div>
-            <p>
-                This 3D jet model, inspired by the X-Wing from Star Wars, was created as a product visualization piece
-                to explore intricate mechanical design and animation. Modeled and textured in Blender, the project
-                emphasizes both aesthetics and functionality, featuring animated landing gear retraction and wing
-                separation to highlight its complexity. A carefully crafted lighting setup and a turntable animation
-                enhance the presentation, creating a striking and immersive showcase that amplifies the futuristic
-                appeal.
-            </p>
-            <div class="gallery">
-                <div class="item">
-                    <video controls class="gallery-item">
-                        <source src="Models/Tank/Tank1Vid0001-0250.mp4" type="video/mp4" />
-                    </video>
-                </div>
-                <div class="item">
-                    <img src="Models/Tank/Tank1Img.png" alt="Tank1" class="gallery-item" />
-                </div>
-                <div class="item">
-                    <video controls class="gallery-item">
-                        <source src="Models/Tank/Tank2Vid.mp4" type="video/mp4" />
-                    </video>
-                </div>
-                <div class="item">
-                    <img src="Models/Tank/Tank2Image.png" alt="Tank2" class="gallery-item" />
-                </div>
-            </div>
-            <p>
-                This 3D model set features two distinct tank variations, differing in weaponry and material design while
-                maintaining the recognizable silhouette of a generic tank. Created in Blender for product visualization,
-                the models use relatively low-poly construction to optimize performance while retaining visual
-                appeal—making them versatile for both static renders and real-time applications. Bloom effects and
-                dynamic lighting enhance the presentation, emphasizing the differences in armament and material.
-                Originally designed as a standalone piece, one of the models was later integrated into my interactive
-                comic project, demonstrating its adaptability in different media.
-            </p>
-        </div>
-    </section>
-
-    <section id="Contact">
-        <div class="banner">
-            <h2>Contact</h2>
-        </div>
-        <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col">
+                    <p>Hi, I'm Jakob Sikes, a passionate 3D modeler and animator. I create detailed models and animations for games and visual projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Projects" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center banner mb-5">Projects</h2>
+
+            <!-- Models Section -->
+            <h3 class="mb-4">3D Models</h3>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3"><video controls class="w-100" src="Models/TechnoWeapons/HandBlades.mp4"></video></div>
+                <div class="col-md-6 col-lg-3"><video controls class="w-100" src="Models/TechnoWeapons/DoubleBladeBlaster.mp4"></video></div>
+                <div class="col-md-6 col-lg-3"><video controls class="w-100" src="Models/TechnoWeapons/DoubleSidedBladeBlaster.mp4"></video></div>
+                <div class="col-md-6 col-lg-3"><video controls class="w-100" src="Models/TechnoWeapons/SingleBladeBlaster.mp4"></video></div>
+            </div>
+            <div class="row mt-4">
+                <div class="col">
+                    <p>This collection of 3D weapon variations was designed for product visualization...</p>
+                </div>
+            </div>
+
+            <!-- Jet Section -->
+            <div class="row g-4 mt-5">
+                <div class="col-md-4"><video controls class="w-100" src="Models/Jet/Jet0001-0980.mp4"></video></div>
+                <div class="col-md-4"><img src="Models/Jet/WireFrameJet.png" alt="WireFrameJet" class="img-fluid" /></div>
+                <div class="col-md-4"><img src="Models/Jet/Non-Rendered-Jet.png" alt="Non-renderedJet" class="img-fluid" /></div>
+            </div>
+            <div class="row mt-4">
+                <div class="col">
+                    <p>This 3D jet model, inspired by the X-Wing from Star Wars, was created as a product visualization piece...</p>
+                </div>
+            </div>
+
+            <!-- Tank Section -->
+            <div class="row g-4 mt-5">
+                <div class="col-md-6"><video controls class="w-100" src="Models/Tank/Tank1Vid0001-0250.mp4"></video></div>
+                <div class="col-md-6"><img src="Models/Tank/Tank1Img.png" alt="Tank1" class="img-fluid" /></div>
+                <div class="col-md-6"><video controls class="w-100" src="Models/Tank/Tank2Vid.mp4"></video></div>
+                <div class="col-md-6"><img src="Models/Tank/Tank2Image.png" alt="Tank2" class="img-fluid" /></div>
+            </div>
+            <div class="row mt-4">
+                <div class="col">
+                    <p>This 3D model set features two distinct tank variations, differing in weaponry and material design...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center banner mb-4">Contact</h2>
+            <div class="row">
+                <div class="col-md-6 mb-3">
                     <p class="yellow">Email: <a href="mailto:jakob_sik@icloud.com">jakob_sik@icloud.com</a></p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 mb-3">
                     <p class="yellow">LinkedIn: <a href="https://www.linkedin.com/in/jakobsikes" target="_blank">Visit My LinkedIn</a></p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
+    <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2025 | Jakob Sikes | 3D Modeler & Animator</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
-
 </html>
