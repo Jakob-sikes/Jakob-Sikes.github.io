@@ -23,9 +23,9 @@ section {
     max-width: 1400px;
 }
 
-.yellow:hover {
-    color: yellow; /* Changes font color to yellow on hover */
-    text-decoration: none; /* Optional: Removes underline on hover */
+.yellow a:hover  {
+    color: yellow; 
+    text-decoration: none; 
 }
 
 header {
