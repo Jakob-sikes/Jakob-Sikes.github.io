@@ -23,7 +23,7 @@ section {
     max-width: 1400px;
 }
 
-.contact-link:hover {
+.yellow:hover {
     color: yellow; /* Changes font color to yellow on hover */
     text-decoration: none; /* Optional: Removes underline on hover */
 }
