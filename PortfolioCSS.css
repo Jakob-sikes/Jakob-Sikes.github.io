@@ -178,3 +178,27 @@ footer {
     color: white;
 }
 
+
+.video-frame {
+    width: 100%;
+    height: 300px;
+}
+
+
+.ar-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.IC_Outline{
+    width: 100%; 
+    height: 300px; 
+    object-fit: cover;
+}
+
+.IC_Video{
+    width: 100%; 
+    height: 300px;
+}
+
