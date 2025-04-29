@@ -175,4 +175,19 @@ footer {
     color: white;
 }
 
+/*Fixes from webpagetest.org*/
 
+/*
+Fix any of the following: Element has insufficient color contrast of 3.57 (foreground color: #0d6efd, background color: #212121, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1<a href="mailto:jakob_sik@icloud.com">jakob_sik@icloud.com</a>
+Fix any of the following: Element has insufficient color contrast of 3.57 (foreground color: #0d6efd, background color: #212121, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1<a href="https://www.linkedin.com/in/jakobsikes" target="_blank">Visit My LinkedIn</a> 
+*/
+
+.contact-link {
+    color: #1e90ff; 
+    text-decoration: underline; 
+}
+
+.contact-link:hover {
+    color: #63b8ff; 
+    text-decoration: none;
+}
