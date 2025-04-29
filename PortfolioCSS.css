@@ -175,13 +175,4 @@ footer {
     color: white;
 }
 
-.gallery-item.video-frame, 
-.img-fluid.ar-image, 
-.img-fluid.IC_Outline, 
-.gallery-item .IC_Video
-{
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
 
