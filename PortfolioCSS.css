@@ -34,12 +34,18 @@ section {
     text-decoration: underline;
 }
 
-.Projects {
-    background-color:DarkSlateGray;
+
+.section-dark-1 {
+    background-color: #2a2a2a; /* Dark gray */
+    color: black;
 }
-.Animations {
-    background-color: rgb(53, 53, 53);
+
+.section-dark-2 {
+    background-color: #333333; /* Slightly lighter */
+    color: black;
 }
-.Larger_Projects {
-    background-color:DarkSlateGray;
+
+.section-dark-3 {
+    background-color: #3d3d3d; /* Another variation */
+    color: black;
 }
