@@ -33,3 +33,13 @@ section {
 #contact a:hover {
     text-decoration: underline;
 }
+
+.Projects {
+    background-color:DarkSlateGray;
+}
+.Animations {
+    background-color: rgb(53, 53, 53);
+}
+.Larger_Projects {
+    background-color:DarkSlateGray;
+}
