@@ -40,16 +40,16 @@ section {
 
 
 .section-dark-1 {
-    background-color: #2a2a2a; /* Dark gray */
+    background-color: #2a2a2a; 
     color: rgb(255, 255, 255);
 }
 
 .section-dark-2 {
-    background-color: #333333; /* Slightly lighter */
+    background-color: #333333; 
     color: rgb(255, 255, 255);
 }
 
 .section-dark-3 {
-    background-color: #3d3d3d; /* Another variation */
+    background-color: #3d3d3d; 
     color: rgb(255, 255, 255);
 }
