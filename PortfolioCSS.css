@@ -8,11 +8,12 @@ body {
 
 h1, h2, h3, h4 {
     font-weight: bold;
+    color: white;
 }
 
 .banner {
     font-size: 2rem;
-    color: #343a40;
+    color: #ffffff;
 }
 
 video {
