@@ -56,6 +56,6 @@ section {
 
 .youtube-video {
     width: 100%; /* Full width */
-    height: 900px; /* Adjust height as needed */
+    height: 600px; /* Adjust height as needed */
     max-height: none; /* Prevent overflow */
 }
