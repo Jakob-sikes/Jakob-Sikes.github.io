@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio - Jakob Sikes</title>
+    <link rel="icon" href="data:," />
+    <!-- 
+    (Used webpagetest.org) - 2 Improvments below
+
+    Fix 1:
+
+    Problem: Loading Bootstrap can slowed down the page, the browser waits for it to load before showing anything, makes page 
+    feel slower
+    
+    Solution: `media="print"` to tell the browser not to apply the Bootstrap styles right away. With `onload="this.media='all'"`, 
+    syles are applied as soon as the file finishes loading.
+
+    Fix 2:
+    
+    Problem: Loading all images on the page at once slows things down
+
+    Solution: `loading="lazy"` on images to tell the browser to only load them when they’re about to appear on the screen. 
+    This way, images that aren’t immediately visible don’t slow down the initial page load.
+    -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" media="print"
+        onload="this.media='all'" />
+    <noscript>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    </noscript>
+
+    <link rel="stylesheet" href="PortfolioCSS.css" />
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <h1 class="top">Jakob Sikes</h1>
+            <p>3D Modeler & Animator</p>
+            <nav>
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><a class="nav-link text-white" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home -->
+    <section id="home" class="py-5">
+        <div class="container text-center">
+            <h2 class="banner">Welcome to My Portfolio</h2>
+            <p>Showcasing my best 3D models, animations, and interactive projects.</p>
+            <div class="row align-items-center mt-4">
+                <div class="col-md-4">
+                    <img src="ProfPic.jpeg" alt="Jakob Sikes Headshot" class="img-fluid rounded-circle" />
+                </div>
+                <div class="col-md-8 text-start">
+                    <p>
+                        Hi, I'm Jakob Sikes, a passionate 3D modeler and animator. I specialize in immersive 3D assets
+                        and storytelling for games and visual media. Whether crafting environments, characters, or
+                        animations, I bring creativity and technical skill to every project.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-5 section-dark-1 text-white" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center banner mb-5">Projects</h2>
+
+            <!-- Weapons -->
+            <h3 class="mb-3">3D Models</h3>
+            <h5 class="mt-5 mb-3">Techno Weapons</h5>
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-3"><video controls class="w-100"
+                        src="Models/TechnoWeapons/HandBlades.mp4"></video></div>
+                <div class="col-sm-6 col-lg-3"><video controls class="w-100"
+                        src="Models/TechnoWeapons/DoubleBladeBlaster.mp4"></video></div>
+                <div class="col-sm-6 col-lg-3"><video controls class="w-100"
+                        src="Models/TechnoWeapons/DoubleSidedBladeBlaster.mp4"></video></div>
+                <div class="col-sm-6 col-lg-3"><video controls class="w-100"
+                        src="Models/TechnoWeapons/SingleBladeBlaster.mp4"></video></div>
+            </div>
+            <p class="mt-3">
+                This collection of 3D weapon variations was designed for product visualization, focusing on
+                creating a
+                futuristic,
+                off-world aesthetic that diverges from traditional firearm designs. Modeled and textured in
+                Blender, I
+                utilized mirror
+                modifiers to refine symmetrical structures and incorporated Bloom effects to enhance the glowing
+                elements, adding depth
+                and variation. The designs emphasize sleek yet unconventional forms, pushing beyond the orthodox
+            </p>
+
+            <!-- Jet -->
+            <h5 class="mt-5 mb-3">3D Jet Model</h5>
+            <div class="row g-4">
+                <div class="col-md-4"><video controls class="w-100" src="Models/Jet/Jet0001-0980.mp4"></video></div>
+                <div class="col-md-4"><img src="Models/Jet/WireFrameJet.png" alt="Jet Wireframe" class="img-fluid"
+                        loading="lazy" />
+                </div>
+                <div class="col-md-4"><img src="Models/Jet/Non-Rendered-Jet.png" alt="Jet Non-rendered"
+                        class="img-fluid" loading="lazy" /></div>
+            </div>
+            <p class="mt-3">
+                This 3D jet model, inspired by the X-Wing from Star Wars, was created as a product visualization
+                piece
+                to explore
+                intricate mechanical design and animation. Modeled and textured in Blender, the project
+                emphasizes both
+                aesthetics
+                and functionality, featuring animated landing gear retraction and wing separation to highlight
+                its
+                complexity.
+                A carefully crafted lighting setup and a turntable animation enhance the presentation, creating
+                a
+                striking and
+                immersive showcase that amplifies the futuristic appeal.
+            </p>
+
+            <!-- Tank -->
+            <h5 class="mt-5 mb-3">3D Tanks</h5>
+            <div class="row g-4">
+                <div class="col-md-6"><video controls class="w-100" src="Models/Tank/Tank1Vid0001-0250.mp4"></video>
+                </div>
+                <div class="col-md-6"><img src="Models/Tank/Tank1Img.png" alt="Tank 1" class="img-fluid"
+                        loading="lazy" /></div>
+                <div class="col-md-6"><video controls class="w-100" src="Models/Tank/Tank2Vid.mp4"></video></div>
+                <div class="col-md-6"><img src="Models/Tank/Tank2Image.png" alt="Tank 2" class="img-fluid"
+                        loading="lazy" /></div>
+            </div>
+            <p class="mt-3">
+                This 3D model set features two distinct tank variations, differing in weaponry and material
+                design while
+                maintaining the recognizable silhouette of a generic tank. Created in Blender for product
+                visualization,
+                the models use relatively low-poly construction to optimize performance while retaining visual
+                appeal—making
+                them versatile for both static renders and real-time applications. Bloom effects and dynamic
+                lighting
+                enhance
+                the presentation, emphasizing the differences in armament and material. Originally designed as a
+                standalone piece, one of the models was later integrated into my interactive comic project,
+                demonstrating its adaptability in different media.
+            </p>
+        </div>
+    </section>
+
+    <!-- Animations -->
+    <section id="animations" class="py-5 section-dark-2 text-white" class="py-5">
+        <div class="container">
+            <h3 class="mb-4">Animations</h3>
+
+            <!-- Portal Animation -->
+            <h5 class="mt-5">Portal Effect</h5>
+            <div class="row g-4">
+                <div class="col-md-4"><video controls class="w-100" src="Animations/Portal/Portal.mp4"></video></div>
+                <div class="col-md-4"><img src="Animations/Portal/Non-render-Portal.png" alt="Portal Render"
+                        class="img-fluid" loading="lazy" /></div>
+                <div class="col-md-4"><img src="Animations/Portal/Portal_Wire.png" alt="Portal Wireframe"
+                        class="img-fluid" loading="lazy" /></div>
+            </div>
+            <p class="mt-3">
+                This animation depicts a malfunctioning machine tearing open a portal, pulling nearby boxes into
+                its swirling void. Shot from a static camera perspective, the scene focuses on the chaos
+                unfolding, with added camera shake to intensify the severity of the malfunction. Modeled and
+                textured in Blender, I utilized node shaders to create a dynamic portal illusion, enhanced by
+                keyframed rotations for a mesmerizing spinning effect. To push the animation further, I refined
+                it in DaVinci Resolve, applying additional effects to heighten the atmosphere and immersion.
+                This project was a personal exploration of visual storytelling and dynamic motion, blending 3D
+                animation with post-processing for a more polished and dramatic presentation.
+            </p>
+
+            <!-- Souls-Like Animation -->
+            <h5 class="mt-5">Souls-Like Scene</h5>
+            <div class="row g-4">
+                <div class="col-md-4"><video controls class="w-100" src="Animations/Souls-Like/SoulsLike.mp4"></video>
+                </div>
+                <div class="col-md-4"><img src="Animations/Souls-Like/Barrel.png" alt="Souls-Like Barrel"
+                        class="img-fluid" loading="lazy" /></div>
+                <div class="col-md-4"><img src="Animations/Souls-Like/WireFrameSouls.png" alt="Souls-Like Wireframe"
+                        class="img-fluid" loading="lazy" /></div>
+            </div>
+            <p class="mt-3">
+                Created for a two-week game jam hosted by Boise State University's Game Dev and Design club, this
+                animation aimed to capture the immersive and foreboding essence of a Souls-like game. Using a
+                first-person perspective, the scene follows a lone wanderer navigating a fog-drenched, mysterious
+                town, evoking a sense of unease and discovery. Modeled and textured entirely in Blender, I used
+                keyframed animations for character movement and environmental interactions, enhancing the realism of
+                the experience. To refine the presentation, I brought the animation into DaVinci Resolve, where I
+                smoothed transitions, adjusted pacing, and applied subtle motion enhancements to deepen the
+                atmospheric tension. The final piece balances eerie visuals and fluid movement, immersing the
+                audience in a haunting world reminiscent of the Souls-like genre.
+            </p>
+        </div>
+    </section>
+
+    <section id="larger_Projects" class="py-5 section-dark-3 text-white" class="py-5">
+        <div class="container">
+            <h3 class="mb-4">Larger Projects</h3>
+
+            <!-- Interactive Comic -->
+            <h5 class="mt-5">Random Universe</h5>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <iframe class="youtube-video" src="https://www.youtube.com/embed/ZQ_yhmBtbXg?si=pxsAqW-ppMI0IiZs"
+                        title="Interactive Comic Video" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="col-md-6">
+                    <img src="Projects/InteractiveComic/StoryOutline.png" alt="Story Outline" class="img-fluid w-100"
+                        loading="lazy" />
+                </div>
+                <div class="col-md-6">
+                    <img src="Projects/InteractiveComic/Page4-.png" alt="Page 4" class="img-fluid w-100"
+                        loading="lazy" />
+                </div>
+                <div class="col-md-6">
+                    <img src="Projects/InteractiveComic/Page4V2-.png" alt="Page 4 V2" class="img-fluid w-100"
+                        loading="lazy" />
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col">
+                    <p>In Spring 2024, our team created an interactive comic exploring the randomness of the universe
+                        through branching narratives and minigames. The story follows an abstract character from
+                        childhood to death, with pivotal choices drastically altering their journey. I contributed by
+                        modeling and refining scenes in Blender, enhancing them in Photoshop, and rendering them in a
+                        comic-style format for Unity. I also designed a maze minigame, symbolizing a critical decision
+                        where players choose between an easy but unethical path or a difficult but moral one. A key
+                        challenge was maintaining narrative cohesion across multiple branches while ensuring engaging
+                        gameplay, which we solved through careful story mapping and iterative testing. This project
+                        blended storytelling, game design, and visual artistry, creating an immersive experience that
+                        captures life’s unpredictability.</p>
+                </div>
+            </div>
+
+            <!-- AR Project -->
+            <h5 class="mt-5">Venom and Valor</h5>
+            <div class="row g-4 mt-5">
+                <div class="col-md-6">
+                    <iframe class="youtube-video" src="https://www.youtube.com/embed/PMTM2MbKoQA?si=ea7H0Hm89vki8UgI"
+                        title="AR Project Video" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="col-md-6">
+                    <img src="Projects/AR/AR_Models.png" alt="AR Models" class="img-fluid w-100" loading="lazy" />
+                </div>
+                <div class="col-md-6">
+                    <img src="Projects/AR/ARPixle.png" alt="AR Pixel Art" class="img-fluid w-100" loading="lazy" />
+                </div>
+                <div class="col-md-6">
+                    <img src="Projects/AR/2D Game.PNG" alt="2D Game" class="img-fluid w-100" loading="lazy" />
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col">
+                    <p>In Fall 2023, our group developed an augmented reality (AR) game that combined a 2D Unity card
+                        game
+                        with real-world Blender models as AR components. Players used digital cards to summon characters
+                        and
+                        elements that appeared in the real world through AR. My role involved creating all artistic
+                        assets,
+                        including the UI, 3D AR models (such as a farmer, soldier, raven, snake, and food), and 2D card
+                        designs. A key challenge was ensuring seamless integration between 2D gameplay and AR
+                        interactions,
+                        which required refining textures and optimizing models for performance. Working with AR
+                        introduced a
+                        new level of complexity and immersion, transforming static cards into interactive experiences.
+                        This
+                        project was a valuable exploration of creative asset design and innovative ways to engage
+                        players
+                        through mixed reality.</p>
+                </div>
+            </div>
+
+            <!-- Platformer -->
+            <h5 class="mt-5">Soccer Blitz</h5>
+            <div class="row g-4 mt-5">
+                <div class="col-md-6">
+                    <iframe class="youtube-video" src="https://www.youtube.com/embed/Bw7O6itX1yI?si=NVulxT7l67WuX1O6"
+                        title="Platformer Gameplay 1" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="col-md-6">
+                    <iframe class="youtube-video" src="https://www.youtube.com/embed/qo_rzFm5p_g?si=a9ZraJduKv5Rabte"
+                        title="Platformer Gameplay 2" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col">
+                    <p>In Fall 2023, I developed my first solo game, a 2D soccer-themed platformer that blends my love
+                        for
+                        soccer and game development. Using a pixel art style for its nostalgic charm, I focused on
+                        gameplay
+                        mechanics like double jumps, dashes, and collectible cards for points. Players control a soccer
+                        ball, dodging defenders and obstacles while aiming for the goal. The biggest challenge was
+                        learning
+                        to code in Unity for the first time, but overcoming it made the experience incredibly rewarding.
+                        Designing mechanics, balancing difficulty, and seeing the game come to life deepened my
+                        appreciation
+                        for game development. This project reinforced my passion for crafting engaging, interactive
+                        experiences and taught me valuable skills in both game design and programming.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="bg-dark text-white py-5">
+        <div class="container text-center">
+            <h2>Contact</h2>
+            <p>Feel free to reach out for collaborations or commissions!</p>
+            <p>Email: <a href="mailto:jakob_sik@icloud.com" class="text-white">jakob_sik@icloud.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/jakobsikes" class="text-white">LinkedIn</a>
+            </p>
+        </div>
+
+        <div class="text-center mt-3">
+            <a class="btn btn-light" href="#top">Back to Top</a>
+        </div>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
