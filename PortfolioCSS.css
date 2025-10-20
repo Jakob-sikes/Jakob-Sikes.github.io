@@ -20,7 +20,7 @@ body {
     background-color: #2b2b2b;
     border-radius: 15px;
     max-width: 1100px;
-    margin: 120px auto 40px auto; /* Top margin for navbar spacing, bottom margin for spacing between sections */
+    margin: 130px auto 40px auto; /* Top margin for navbar spacing, bottom margin for spacing between sections */
     padding: 40px;
     text-align: center;
 }
