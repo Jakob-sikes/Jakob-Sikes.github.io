@@ -1,78 +1,42 @@
-/* General */
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #121212;
-    color: #ffffff;
 }
 
-/* Navbar */
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #1f1f1f;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 15px 0;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
-}
-
-.navbar a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background 0.3s, color 0.3s;
-}
-
-.navbar a:hover {
+/* Navbar hover */
+.navbar .nav-link:hover,
+.navbar .navbar-brand:hover {
     background-color: #ffffff;
-    color: #121212;
+    color: #121212 !important;
+    border-radius: 5px;
+    transition: 0.3s;
 }
 
-/* Sections */
-section {
-    padding: 100px 50px 50px 50px;
+/* Section Cards */
+.section-card {
+    background-color: #2b2b2b;
+    border-radius: 15px;
+    max-width: 1100px;
 }
 
-/* Works Grid */
-.works-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    margin-top: 30px;
-}
-
-.works-grid a img {
-    width: 100%;
+/* Portfolio Images Hover */
+.section-img {
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.works-grid a img:hover {
+.section-img:hover {
     transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(255,255,255,0.2);
-}
-
-/* Portfolio Image on Portfolio Pages */
-.portfolio-img {
-    max-width: 80%;
-    display: block;
-    margin: 40px auto;
-    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
 }
 
 /* Contact Links */
-.contact a {
+section a {
     color: #1e90ff;
     text-decoration: none;
     transition: color 0.3s;
 }
 
-.contact a:hover {
+section a:hover {
     color: #63b3ed;
 }

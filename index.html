@@ -1,41 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Home</title>
-    <link rel="stylesheet" href="PortfolioCSS.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Home</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="PortfolioCSS.css">
 </head>
-<body>
+<body class="bg-dark text-white">
 
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="Blaster.html">Blaster</a>
-        <a href="jet.html">Jet</a>
-        <a href="tank.html">Tank</a>
-        <a href="gun.html">Gun</a>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top">
+    <div class="container justify-content-center">
+      <a class="navbar-brand mx-2" href="index.html">Home</a>
+      <a class="nav-link mx-2" href="blaster.html">Blaster</a>
+      <a class="nav-link mx-2" href="jet.html">Jet</a>
+      <a class="nav-link mx-2" href="tank.html">Tank</a>
+      <a class="nav-link mx-2" href="gun.html">Gun</a>
     </div>
+  </nav>
 
-    <section id="about">
-        <h1>About Me</h1>
-        <p>Hi! I'm a 3D asset artist and modeler. I specialize in creating detailed 3D models and assets for games and interactive media. Welcome to my portfolio!</p>
-    </section>
+  <!-- About Me Section -->
+  <section id="about" class="section-card mt-5 p-4 mx-auto text-center">
+    <h1>About Me</h1>
+    <p>Hi! I'm a 3D asset artist and modeler. I specialize in creating detailed 3D models and assets for games and interactive media. Welcome to my portfolio!</p>
+  </section>
 
-    <section id="works">
-        <h1>Quick Look</h1>
-        <div class="works-grid">
-            <a href="blaster.html"><img src="blaster.jpg" alt="Blaster"></a>
-            <a href="jet.html"><img src="jet.jpg" alt="Jet"></a>
-            <a href="tank.html"><img src="tank.jpg" alt="Tank"></a>
-            <a href="gun.html"><img src="gun.jpg" alt="Gun"></a>
-        </div>
-    </section>
+  <!-- Works Section -->
+  <section id="works" class="section-card mt-4 p-4 mx-auto text-center">
+    <h1>Quick Look</h1>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 mt-3 justify-content-center">
+      <div class="col">
+        <a href="blaster.html"><img src="blaster.jpg" alt="Blaster" class="img-fluid section-img"></a>
+      </div>
+      <div class="col">
+        <a href="jet.html"><img src="jet.jpg" alt="Jet" class="img-fluid section-img"></a>
+      </div>
+      <div class="col">
+        <a href="tank.html"><img src="tank.jpg" alt="Tank" class="img-fluid section-img"></a>
+      </div>
+      <div class="col">
+        <a href="gun.html"><img src="gun.jpg" alt="Gun" class="img-fluid section-img"></a>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact">
-        <h1>Contact</h1>
-        <p>Email: <a href="mailto:yourname@example.com">yourname@example.com</a></p>
-        <p>Links: <a href="#">LinkedIn</a> | <a href="#">ArtStation</a> | <a href="#">Instagram</a></p>
-    </section>
+  <!-- Contact Section -->
+  <section id="contact" class="section-card mt-4 p-4 mx-auto text-center">
+    <h1>Contact</h1>
+    <p>Email: <a href="mailto:yourname@example.com">yourname@example.com</a></p>
+    <p>Links: <a href="#">LinkedIn</a> | <a href="#">ArtStation</a> | <a href="#">Instagram</a></p>
+  </section>
 
 </body>
 </html>
