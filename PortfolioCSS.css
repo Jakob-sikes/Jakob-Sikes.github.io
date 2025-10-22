@@ -82,3 +82,26 @@ section a:hover {
   box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
 }
 
+/* About Me Flexbox */
+.about-flex {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left; /* ensures text aligns nicely next to the image */
+}
+
+/* Profile Image */
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* About text */
+.about-text {
+  max-width: 500px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+
