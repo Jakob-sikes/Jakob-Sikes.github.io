@@ -62,3 +62,18 @@ section a:hover {
   max-width: 900px; /* control image size */
   display: block;
 }
+
+/* keep grid centered as a block and control max width */
+.work-grid {
+  max-width: 980px; /* adjust to taste to match your card width */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ensure columns align and images stay same size */
+.row > .col-12 > a,
+.row > .col-sm-6 > a,
+.row > .col-md-4 > a {
+  display: block;
+  text-align: center;
+}
