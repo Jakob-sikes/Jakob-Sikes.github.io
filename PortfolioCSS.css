@@ -63,17 +63,22 @@ section a:hover {
   display: block;
 }
 
-/* keep grid centered as a block and control max width */
 .work-grid {
-  max-width: 980px; /* adjust to taste to match your card width */
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-/* ensure columns align and images stay same size */
-.row > .col-12 > a,
-.row > .col-sm-6 > a,
-.row > .col-md-4 > a {
-  display: block;
-  text-align: center;
+.section-img {
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 260px; /* fixed equal width */
+  height: 220px;
+  object-fit: cover;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
+
+.section-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
