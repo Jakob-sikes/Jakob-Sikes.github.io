@@ -62,7 +62,7 @@ section a:hover {
   border-radius: 12px;
   margin: 20px auto;
   width: 100%;
-  max-width: 900px;
+  max-width: 600px;
   /* control image size */
   display: block;
 }
