@@ -202,3 +202,19 @@ a:hover {
   flex-wrap: wrap;
   margin-top: 20px;
 }
+
+.scrollable-gallery {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.scrollable-gallery img {
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0; /* keeps width constant while scrolling */
+  cursor: pointer;
+}
