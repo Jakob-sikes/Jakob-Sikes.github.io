@@ -185,6 +185,6 @@ a:hover {
 
 /* Taller images */
 .grid-img-tall {
-  max-height: 350px !important;  /* override any previous height */
+  max-height: 550px !important;  /* override any previous height */
   height: auto !important;
 }
