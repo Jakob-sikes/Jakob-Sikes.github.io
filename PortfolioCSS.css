@@ -178,3 +178,27 @@ a:hover {
   height: 350px;
   object-fit: cover;
 }
+
+/* Quick Look / section-img uniform sizing */
+#works .section-img {
+  width: 250px;        /* all images same width */
+  height: 180px;       /* all images same height */
+  object-fit: cover;   /* crops to fit box nicely */
+  border-radius: 12px;
+  transition: transform 0.3s;
+  display: block;
+}
+
+#works .section-img:hover {
+  transform: scale(1.05);
+}
+
+/* Quick Look row flexbox */
+#works .top-row,
+#works .bottom-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
