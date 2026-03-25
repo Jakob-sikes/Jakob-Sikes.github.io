@@ -115,3 +115,19 @@ a:hover {
   font-size: 1.1rem;
   text-align: left;
 }
+
+
+
+/* Flexbox grid for varying image heights */
+.flex-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.flex-grid img {
+  width: 300px;       /* fixed width, height scales naturally */
+  border-radius: 12px;
+  object-fit: cover;  /* preserves aspect ratio */
+}
