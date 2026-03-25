@@ -118,7 +118,7 @@ a:hover {
 
 
 
-/* Flexbox grid for varying image heights */
+/* Flexbox grid for 2 images per row, fixed height */
 .flex-grid {
   display: flex;
   flex-wrap: wrap;
@@ -127,7 +127,8 @@ a:hover {
 }
 
 .flex-grid img {
-  width: 300px;       /* fixed width, height scales naturally */
+  width: 45%;          /* roughly two per row with gap */
+  height: 430px;       /* fixed height */
   border-radius: 12px;
-  object-fit: cover;  /* preserves aspect ratio */
+  object-fit: cover;   /* crops to fill fixed height */
 }
