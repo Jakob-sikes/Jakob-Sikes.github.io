@@ -176,7 +176,7 @@ a:hover {
 /* Standard grid image */
 .grid-img {
   width: 100%;
-  height: auto;          /* let it scale naturally */
+  height: auto;          /* scale naturally */
   max-height: 220px;     /* default max height */
   object-fit: cover;
   border-radius: 12px;
@@ -185,5 +185,6 @@ a:hover {
 
 /* Taller images */
 .grid-img-tall {
-  max-height: 300px;     /* taller than normal */
+  max-height: 350px !important;  /* override any previous height */
+  height: auto !important;
 }
