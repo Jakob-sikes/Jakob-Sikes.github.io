@@ -158,3 +158,23 @@ a:hover {
     width: 90%;
   }
 }
+
+/* Quick Look / section-img uniform sizing */
+.section-img {
+  width: 300px;       /* fixed width */
+  height: 200px;      /* fixed height */
+  object-fit: cover;  /* fills area, crops if needed */
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+.section-img:hover {
+  transform: scale(1.05);
+}
+
+/* Make top hero image slightly larger */
+.section-img.hero {
+  width: 600px;
+  height: 350px;
+  object-fit: cover;
+}
