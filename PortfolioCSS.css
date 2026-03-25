@@ -168,22 +168,22 @@ a:hover {
   color: #000;
 }
 
-.grid-img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 12px;
-  display: block;
-}
 
 .row > div {
   padding: 10px;
 }
 
-.grid-img-tall {
-  height: 300px; /* taller than normal */
-  object-fit: cover; /* crops nicely */
-  border-radius: 12px;
+/* Standard grid image */
+.grid-img {
   width: 100%;
+  height: auto;          /* let it scale naturally */
+  max-height: 220px;     /* default max height */
+  object-fit: cover;
+  border-radius: 12px;
   display: block;
+}
+
+/* Taller images */
+.grid-img-tall {
+  max-height: 300px;     /* taller than normal */
 }
