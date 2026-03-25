@@ -243,3 +243,13 @@ a:hover {
   color: #000;              /* text color */
   font-weight: bold;
 }
+
+.pdf-grid {
+  display: flex;
+  justify-content: center;   /* center the whole row */
+  align-items: center;
+  gap: 20px;                 /* spacing between cards */
+  flex-wrap: nowrap;          /* NO wrapping, force one row */
+  margin-top: 20px;
+  overflow-x: auto;          /* optional: scroll if too many */
+}
