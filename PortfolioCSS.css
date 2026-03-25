@@ -1,4 +1,4 @@
-/* General Body */
+/* ===== General Body ===== */
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -6,7 +6,7 @@ body {
   color: #ffffff;
 }
 
-/* Navbar Buttons */
+/* ===== Navbar Buttons ===== */
 .navbar .btn {
   transition: 0.3s;
 }
@@ -16,27 +16,30 @@ body {
   color: #121212 !important;
 }
 
-/* Section Cards */
+/* ===== Section Cards ===== */
 .section-card {
   background-color: #2b2b2b;
   border-radius: 15px;
   max-width: 1100px;
   margin: 130px auto 40px auto;
-  /* spacing from navbar */
   padding: 40px;
   text-align: center;
 }
 
-/* Works Grid (Homepage only) */
+/* ===== Work Grid ===== */
+.work-grid {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ===== Portfolio Images (Main Page) ===== */
 .section-img {
   border-radius: 10px;
   transition: transform 0.3s, box-shadow 0.3s;
-  margin: 10px;
-  width: 100%;
+  width: 260px;
   height: 220px;
-  /* set consistent display height */
   object-fit: cover;
-  /* crops edges to fill frame evenly */
+  margin: 10px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -45,8 +48,7 @@ body {
   box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
 }
 
-
-/* Contact Links */
+/* ===== Contact Links ===== */
 section a {
   color: #1e90ff;
   text-decoration: none;
@@ -57,54 +59,30 @@ section a:hover {
   color: #63b3ed;
 }
 
-/* Blaster images - larger, no hover */
+/* ===== Blaster / Project Images ===== */
 .blaster-img {
   border-radius: 12px;
   margin: 20px auto;
   width: 100%;
   max-width: 600px;
-  /* control image size */
   display: block;
 }
-/* Blaster images - larger, no hover */
+
 .blast-img {
   border-radius: 12px;
   margin: 20px auto;
   width: 100%;
   max-width: 400px;
-  /* control image size */
   display: block;
 }
 
-.work-grid {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.section-img {
-  border-radius: 10px;
-  transition: transform 0.3s, box-shadow 0.3s;
-  width: 260px;
-  /* fixed equal width */
-  height: 220px;
-  object-fit: cover;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-}
-
-.section-img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
-}
-
-/* About Me Flexbox */
+/* ===== About Me Section ===== */
 .about-flex {
   max-width: 900px;
   margin: 0 auto;
   text-align: left;
-  /* ensures text aligns nicely next to the image */
 }
 
-/* Profile Image */
 .profile-img {
   width: 200px;
   height: 200px;
@@ -112,9 +90,77 @@ section a:hover {
   object-fit: cover;
 }
 
-/* About text */
 .about-text {
   max-width: 500px;
   font-size: 1.1rem;
   line-height: 1.6;
+}
+
+/* ===== Nursery Nightmare / Project Page ===== */
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.tag {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+/* Video */
+.video video {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 12px;
+  margin-top: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Image Grid (Project Pages) */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.image-grid img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-grid img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.15);
+}
+
+/* Buttons (PDF etc.) */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ffffff;
+  color: #121212;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background: #cccccc;
+  color: #000;
+}
+
+/* Section Headers */
+section h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
