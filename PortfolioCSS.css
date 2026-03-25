@@ -127,8 +127,9 @@ a:hover {
 }
 
 .flex-grid img {
-  width: 45%;          /* roughly two per row with gap */
-  height: 430px;       /* fixed height */
+  width: 45%;
+  height: 430px;
   border-radius: 12px;
-  object-fit: cover;   /* crops to fill fixed height */
+  object-fit: contain; /* shows full image */
+  background: #0f0f0f; /* fill empty space with bg color */
 }
