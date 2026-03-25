@@ -218,3 +218,28 @@ a:hover {
   flex-shrink: 0; /* keeps width constant while scrolling */
   cursor: pointer;
 }
+
+.pdf-card {
+  width: 200px;              /* or whatever size you want */
+  height: 150px;
+  background: #ffffff;       /* white background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  text-align: center;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.pdf-card:hover {
+  transform: translateY(-5px);
+}
+
+.pdf-card a {
+  text-decoration: none;
+  color: #000;              /* text color */
+  font-weight: bold;
+}
