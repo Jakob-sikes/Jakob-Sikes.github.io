@@ -179,3 +179,11 @@ a:hover {
 .row > div {
   padding: 10px;
 }
+
+.grid-img-tall {
+  height: 300px; /* taller than normal */
+  object-fit: cover; /* crops nicely */
+  border-radius: 12px;
+  width: 100%;
+  display: block;
+}
