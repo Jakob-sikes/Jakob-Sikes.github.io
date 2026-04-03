@@ -254,10 +254,11 @@ a:hover {
   overflow-x: auto;          /* optional: scroll if too many */
 }
 
-/* Left-align only numbered sections and lists */
-.left-align-content {
+/* Only left-align headings and lists inside UX Case Study */
+#ux-case-study h3,
+#ux-case-study ul {
     text-align: left;
 }
-.left-align-content ul {
-    padding-left: 20px; /* proper indentation for bullets */
+#ux-case-study ul {
+    padding-left: 20px; /* nice indent for bullets/numbers */
 }
