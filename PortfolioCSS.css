@@ -253,3 +253,11 @@ a:hover {
   margin-top: 20px;
   overflow-x: auto;          /* optional: scroll if too many */
 }
+
+/* Left-align only numbered sections and lists */
+.left-align-content {
+    text-align: left;
+}
+.left-align-content ul {
+    padding-left: 20px; /* proper indentation for bullets */
+}
