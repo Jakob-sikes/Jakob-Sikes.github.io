@@ -262,3 +262,16 @@ a:hover {
 #ux-case-study ul {
     padding-left: 20px; /* nice indent for bullets/numbers */
 }
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* two columns */
+  gap: 8px 40px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.skills-grid p {
+  margin: 0;
+}
