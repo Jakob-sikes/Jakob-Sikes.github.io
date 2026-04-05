@@ -266,13 +266,18 @@ a:hover {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 40px;
-  max-width: 900px;
+  grid-template-columns: 1fr 1fr 1fr; /* three columns */
+  gap: 8px 40px;
+  max-width: 800px;
   margin: 0 auto;
   text-align: center;
 }
 
 .skills-grid p {
-  margin: 6px 0;
+  margin: 0;
+}
+
+.skills-grid hr {
+  grid-column: span 3; /* divider spans all columns */
+  width: 100%;
 }
